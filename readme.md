@@ -47,8 +47,8 @@ The project includes the following files:
 No installation is required to use the parser directly. Simply clone or download the repository:
 
 ```bash
-git clone https://github.com/yourusername/hl7-siu-parser.git
-cd hl7-siu-parser
+git clone https://github.com/yourusername/hl7-parser.git
+cd hl7-parser
 ```
 
 ### Installing Dependencies
@@ -67,9 +67,10 @@ This will install `jsonschema` which is used for optional output validation.
 
 ```bash
 python hl7_parser.py sample.hl7
+python hl7_parser.py input.hl7
 ```
 
-This will parse the sample.hl7 file and print the JSON output to the console.
+The above commands would parse the input.hl7 and sample.hl7 files and print the JSON output to the console.
 
 ### Saving Output to a File
 
