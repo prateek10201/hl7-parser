@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Appointment",
+  "description": "An appointment parsed from an HL7 SIU message",
+  "type": "object",
+  "required": [
+    "appointment_id",
+    "appointment_datetime",
+    "patient",
+    "provider",
+    "location",
+    "reason"
+  ],
+  "properties": {
+    "appointment_id": {
+      "type": "string",
+      "description": "Unique identifier for the appointment"
+    },
+    "appointment_datetime": {
+      "type": "string",
+      "description": "Date and time of the appointment in ISO format",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+    },
+    "patient": {
+      "type": "object",
+      "description": "Information about the patient",
+      "required": [
+        "id",
+        "first_name",
+        "last_name",
+        "dob",
+        "gender"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the patient"
+        },
+        "first_name": {
+          "type": "string",
+          "description": "Patient's first name"
+        },
+        "last_name": {
+          "type": "string",
+          "description": "Patient's last name"
+        },
+        "dob": {
+          "type": "string",
+          "description": "Patient's date of birth in YYYY-MM-DD format",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "gender": {
+          "type": "string",
+          "description": "Patient's gender code",
+          "enum": ["M", "F", "O", "U", "A", "N"]
+        }
+      }
+    },
+    "provider": {
+      "type": "object",
+      "description": "Information about the healthcare provider",
+      "required": [
+        "id",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the provider"
+        },
+        "name": {
+          "type": "string",
+          "description": "Provider's name"
+        }
+      }
+    },
+    "location": {
+      "type": "string",
+      "description": "Location of the appointment"
+    },
+    "reason": {
+      "type": "string",
+      "description": "Reason for the appointment"
+    }
+  }
+}

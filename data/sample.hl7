@@ -1,0 +1,4 @@
+MSH|^~\&|EMR|HOSPITAL|RCM|RCMSYSTEM|202505021200||SIU^S12|12345|P|2.3
+SCH|123456^A|...|202505021300|...|...|General Consultation|General Consultation|...|...|...|202505021300|...|...|Clinic A - Room 203
+PID|1||P12345^^^HOSP^MR||Doe^John||19850210|M
+PV1|1|...|D67890^Smith^Dr

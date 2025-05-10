@@ -1,0 +1,53 @@
+[
+  {
+    "appointment_id": "123456",
+    "appointment_datetime": "2025-05-02T13:00:00Z",
+    "patient": {
+      "id": "P12345",
+      "first_name": "John",
+      "last_name": "Doe",
+      "dob": "1985-02-10",
+      "gender": "M"
+    },
+    "provider": {
+      "id": "D67890",
+      "name": "Smith Dr"
+    },
+    "location": "Clinic A - Room 203",
+    "reason": "General Consultation"
+  },
+  {
+    "appointment_id": "10345",
+    "appointment_datetime": "2011-06-17T08:45:00Z",
+    "patient": {
+      "id": "42",
+      "first_name": "ZAPHOD",
+      "last_name": "BEEBLEBROX",
+      "dob": "1978-10-12",
+      "gender": "M"
+    },
+    "provider": {
+      "id": "1",
+      "name": "Adams Douglas A MD"
+    },
+    "location": "OFFICE",
+    "reason": "reason for the appointment"
+  },
+  {
+    "appointment_id": "789012",
+    "appointment_datetime": "2025-05-03T14:30:00Z",
+    "patient": {
+      "id": "P67890",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "dob": "1990-03-15",
+      "gender": "F"
+    },
+    "provider": {
+      "id": "D12345",
+      "name": "Johnson Dr"
+    },
+    "location": "Clinic B - Room 105",
+    "reason": "Follow-up Visit"
+  }
+]

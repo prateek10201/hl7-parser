@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  hl7-parser:
+    build: .
+    volumes:
+      - ./:/app
+      - ./data:/data
+    command: python -m unittest test_hl7_parser.py
+  
+  hl7-parser-cli:
+    build: .
+    volumes:
+      - ./:/app
+      - ./data:/data
+    command: python hl7_parser.py /data/sample.hl7
+    profiles:
+      - cli
+  
+  hl7-parser-multi:
+    build: .
+    volumes:
+      - ./:/app
+      - ./data:/data
+    command: python hl7_parser.py /data/multiple_samples.hl7 --multiple
+    profiles:
+      - cli-multi
