@@ -1,4 +1,4 @@
-# HL7 SIU Parser for Appointments
+# HL7 Parser for Appointments
 
 A Python-based parser that reads HL7 SIU (Schedule Information Unsolicited) message files and converts them into structured JSON objects representing appointments.
 
